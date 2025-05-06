@@ -1,0 +1,152 @@
+/* Import reset stylesheet to normalize browser default styles */
+@import url("reset.css");
+
+/* Base styles (Small Mobile) */
+/* Set full height for HTML and body elements */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic body styling */
+body {
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    background-color: #f5f5f5; /* Light gray background */
+    font-family: Arial, sans-serif; /* Set default sans-serif font */
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    position: relative; /* Enable absolute positioning for child elements */
+}
+
+/* Container that centers the card in the middle of the screen */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the container both horizontally and vertically */
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center card horizontally */
+    box-sizing: border-box;
+}
+
+/* Card styling for the contact information */
+.card {
+    width: 100%;
+    max-width: 350px; /* Limit width on small mobile */
+    background-color: white;
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation effect */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+/* Profile image styling */
+.card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Create circular image of a rectangular picture*/
+    object-fit: contain; /* Ensure image content is fully visible */
+}
+
+/* Name styling */
+.card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #0c0c0c; /* Very dark gray, almost black */
+}
+
+/* Job title styling */
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #2e2d2d; /* Dark gray */
+    font-weight: normal; /* Less emphasis than name */
+}
+
+/* Contact information text styling */
+.card p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #2e2d2d; /* Dark gray */
+}
+
+/* Media query for Large Mobile/Tablet (≥ 500px) */
+@media screen and (min-width: 500px) {
+    /* Increase card size for larger screens */
+    .card {
+        max-width: 450px; /* Wider card on larger screens */
+        padding: 30px; /* More internal spacing */
+    }
+
+    /* Larger profile image for better visibility */
+    .card img {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 25px;
+    }
+
+    /* Layout change: arrange contact info in a row */
+    .contact-info {
+        display: flex;
+        justify-content: space-around; /* Even spacing between contact items */
+        width: 100%;
+    }
+}
+
+/* Media query for Large Tablet/Desktop (≥ 769px) */
+@media screen and (min-width: 769px) {
+    /* Complete layout change for desktop view */
+    .card {
+        max-width: 700px; /* Much wider card for desktop */
+        flex-direction: row; /* Horizontal layout instead of vertical */
+        text-align: left; /* Left-align text (was centered) */
+        padding: 40px; /* More padding for desktop */
+        align-items: center; /* Vertically center items in the row */
+        justify-content: flex-start; /* Align items to the start */
+    }
+
+    /* Adjust image position for horizontal layout */
+    .card img {
+        margin-right: 40px; /* Space between image and text content */
+        margin-bottom: 0; /* Remove bottom margin since items are side by side */
+        width: 200px; /* Larger image for desktop */
+        height: 200px;
+    }
+
+    /* Container for all text content */
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Vertically center content */
+    }
+
+    /* Larger name text for desktop */
+    .card h1 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    /* Larger job title for desktop */
+    .card h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    /* Change contact info back to vertical layout */
+    .contact-info {
+        display: flex;
+        flex-direction: column; /* Stack contact info vertically again */
+    }
+
+    /* Adjust contact text styling for desktop */
+    .contact-info p {
+        margin-bottom: 10px;
+        font-size: 1.1rem; /* Larger font size */
+    }
+}

@@ -6,7 +6,6 @@ You will use this wireframe as a guide to complete your project.
 
 ![Example Mockup](./wireframes/example-mockup.png)  
 
-
 ## Instructions
 
 ### Prerequisites
@@ -31,21 +30,24 @@ Follow these steps to fork and clone the repository:
 To view the project locally, you can either open the project files in your code editor or open the HTML files in your browser.
 
 ### Tasks
+
 In `index.html`, add the following for your contact card:
-- [ ] A Profile Image (your image should be stored in the images folder)
-- [ ] A Name
-- [ ] Title
-- [ ] Phone Number
-- [ ] Company Name
+
+- [X] A Profile Image (your image should be stored in the images folder)
+- [X] A Name
+- [X] Title
+- [X] Phone Number
+- [X] Company Name
 
 In `style.css`, do the following:
-- [ ] Include the css reset in this file. If you are unsure how to do this, please refer to the last assignment.
-- [ ] Write two media queries to account for larger sized screens. Use the breakpoint sizes from the example wireframe or adjust them to fit your card.
-- [ ] Ensure that your card is centered horizontally on all device sizes.
 
+- [X] Include the css reset in this file. If you are unsure how to do this, please refer to the last assignment.
+- [X] Write two media queries to account for larger sized screens. Use the breakpoint sizes from the example wireframe or adjust them to fit your card.
+- [X] Ensure that your card is centered horizontally on all device sizes.
 
-**BONUS**
-- [ ] Make your contact card centered vertically, as well as horizontally.
+  **BONUS**
+
+- [X] Make your contact card centered vertically, as well as horizontally.
 
 ### Submitting Your Work
 
